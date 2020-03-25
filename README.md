@@ -11,6 +11,7 @@ This application will be used by universities that do not want independent contr
 Each Order must have a delivery attached. Each Driver must be a student and or faculty. Establishments can be added by students or faculty, but must be approved by faculty. Each drop-off location must be a university building. Each delivery must have a driver and a recipient who can be a student or faculty. Each Delivery must have an establishment and drop off location. Deliveries must be marked complete when completed
 
 ## EERD
+![](image.png)
 
 ## MySQL Queries
 In our setup we will be using the usual create table queries. A simple example would be as follows:
