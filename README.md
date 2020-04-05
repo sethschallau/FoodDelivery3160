@@ -2,13 +2,21 @@
 Members: Ethan Carter and Seth Schallau
 ## Introduction
 This Food Delivery service is providing a service to universities that works with security and safety procedures. 
-A university who purchases a license can run an instance of the application and distribute the app to their students. This will allow faculty to stay in control of who is delivering food on campus, and where that food is coming from.
+A university who purchases a license can run an instance of the application and distribute the app to their students. This will allow faculty to stay in control of who is delivering food on campus, and where that food is coming from. This application will work by allowing students to place an order at a resturant that is signed up with the service. This order will be "confirmed" and payment will be processed once a driver (another student) has accepted the order. These resturants, drivers, and students will all be "approved" users by the university faculty that oversees the operation.
 
 ## Use Case
 This application will be used by universities that do not want independent contractors on campus, but still desire food delivery service.
 
 ## Business Rules
-Each Order must have a delivery attached. Each Driver must be a student and or faculty. Establishments can be added by students or faculty, but must be approved by faculty. Each drop-off location must be a university building. Each delivery must have a driver and a recipient who can be a student or faculty. Each Delivery must have an establishment and drop off location. Deliveries must be marked complete when completed
+* Drivers must be a student or faculty
+* Drivers must be approved by administrators
+* Orders will not be confirmed until the driver accepts the order
+* Resturants must be approved by administrators
+* Administrators may only be faculty, but not all faculty are administrators
+* Drop-Off locations must be a University Building
+* Each Order must have a recipient, driver, resturant, and drop-off location
+* Orders will be marked completed once the driver arrives at the drop-off and completes the order
+
 
 ## EERD
 ![](images/image.png)
