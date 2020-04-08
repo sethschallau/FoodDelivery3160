@@ -22,7 +22,7 @@ This application will be used by universities that do not want independent contr
 ![](images/EERD_normalized.png)
 
 ## Data Dictionary
-###Person
+**Person**
 | Attribute     | Data type      | Description                          |
 | ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
@@ -30,7 +30,7 @@ This application will be used by universities that do not want independent contr
 | email         | VARCHAR(255)   | email address of Person              |
 | phone         | VARCHAR(10)    | cell phone number of Person          |
 
-###Student
+**Student**
 | Attribute     | Data type      | Description                          |
 | ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
@@ -38,7 +38,7 @@ This application will be used by universities that do not want independent contr
 | major         | VARCHAR(255)   | major of Student                     |
 | type          | TINYTEXT       | type of Student (undergrad or grad)  |
 
-###Faculty
+**Faculty**
 | Attribute     | Data type      | Description                          |
 | ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
@@ -46,7 +46,7 @@ This application will be used by universities that do not want independent contr
 | highestDegree | VARCHAR(255)   | highest obtained degree              |
 | degreecollege | TINYTEXT       | college degree was obtained from     |
 
-###Driver
+**Driver**
 | Attribute     | Data type      | Description                          |
 | ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
@@ -55,7 +55,7 @@ This application will be used by universities that do not want independent contr
 | rating        | int            | average delivery rating              |
 
 
-###Order
+**Order**
 | Attribute     | Data type      | Description                          |
 | ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
@@ -64,14 +64,14 @@ This application will be used by universities that do not want independent contr
 | location_id   | VARCHAR(255)   | ID of location to be delivered to    |
 | price         | numeric        | total price of order                 |
 
-###Location
+**Location**
 | Attribute     | Data type      | Description                          |
 | ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
 | address       | VARCHAR(255)   | address of Location                  |
 | dropoffPoint  | VARCHAR(255)   | point of entry to Location           |
 
-###Restaurant
+**Restaurant**
 | Attribute     | Data type      | Description                          |
 | ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
