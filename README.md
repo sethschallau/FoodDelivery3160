@@ -19,7 +19,7 @@ This application will be used by universities that do not want independent contr
 
 
 ## EERD
-![](images/image.png)
+![](images/EERD_normalized.png)
 
 ## MySQL Queries
 In our setup we will be using the usual create table queries. A simple example would be as follows:
