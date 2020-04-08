@@ -24,28 +24,31 @@ This application will be used by universities that do not want independent contr
 ## Data Dictionary
 ###Person
 | Attribute     | Data type      | Description                          |
-|---------------|----------------|--------------------------------------|
+| ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
 | name          | VARCHAR(50)    | full name of Person                  |
 | email         | VARCHAR(255)   | email address of Person              |
 | phone         | VARCHAR(10)    | cell phone number of Person          |
+
 ###Student
 | Attribute     | Data type      | Description                          |
-|---------------|----------------|--------------------------------------|
+| ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
 | gradyear      | DATE           | expected graduation date of Student  |
 | major         | VARCHAR(255)   | major of Student                     |
 | type          | TINYTEXT       | type of Student (undergrad or grad)  |
+
 ###Faculty
 | Attribute     | Data type      | Description                          |
-|---------------|----------------|--------------------------------------|
+| ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
 | title         | VARCHAR(50)    | job title of Faculty                 |
 | highestDegree | VARCHAR(255)   | highest obtained degree              |
 | degreecollege | TINYTEXT       | college degree was obtained from     |
+
 ###Driver
 | Attribute     | Data type      | Description                          |
-|---------------|----------------|--------------------------------------|
+| ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
 | licenseNumber | VARCHAR(20)    | state issued driver's license number |
 | dateHired     | DATE           | date hired by company                |
@@ -54,21 +57,23 @@ This application will be used by universities that do not want independent contr
 
 ###Order
 | Attribute     | Data type      | Description                          |
-|---------------|----------------|--------------------------------------|
+| ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
 | items         | VARCHAR(255)   | items contained in order             |
 | restaraunt_id | int            | ID of restaurant order is from       |
 | location_id   | VARCHAR(255)   | ID of location to be delivered to    |
 | price         | numeric        | total price of order                 |
+
 ###Location
 | Attribute     | Data type      | Description                          |
-|---------------|----------------|--------------------------------------|
+| ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
 | address       | VARCHAR(255)   | address of Location                  |
 | dropoffPoint  | VARCHAR(255)   | point of entry to Location           |
+
 ###Restaurant
 | Attribute     | Data type      | Description                          |
-|---------------|----------------|--------------------------------------|
+| ------------- | -------------- | ------------------------------------ |
 | ID            | int            | ID number                            |
 | name          | VARCHAR(255)   | name of Restaurant                   |
 | address       | VARCHAR(255)   | address of Restaurant                |
