@@ -6,7 +6,7 @@ A university who purchases a license can run an instance of the application and 
 
 ## Use Case
 This application will be used by universities that do not want independent contractors on campus, but still desire food delivery service.
-
+![](images/useCase.png)
 ## Business Rules
 * Drivers must be a student or faculty
 * Drivers must be approved by administrators
