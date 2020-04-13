@@ -19,7 +19,7 @@ This application will be used by universities that do not want independent contr
 
 
 ## EERD
-![](images/EERD_normalized.png)
+![](images/finalEERD.png)
 
 ## Data Dictionary
 **Person**
@@ -94,4 +94,4 @@ When a new order is submitted to the database a delivery object will be created.
 In the future we will need to create a mobile app to pair with our database. Business-wise, we would also like to sell this to companies and modify the student requirement.
 
 ## MySQL Dump
-We will backup the database with MySQL dump. This will be necessary to preserve records for future use and for data mining purposes.
+Refer to sqlDump Folder
