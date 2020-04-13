@@ -22,62 +22,62 @@ This application will be used by universities that do not want independent contr
 ![](images/finalEERD.png)
 
 ## Data Dictionary
-**Person**
-| Attribute     | Data type      | Description                          |
-| ------------- | -------------- | ------------------------------------ |
-| ID            | int            | ID number                            |
-| name          | VARCHAR(50)    | full name of Person                  |
-| email         | VARCHAR(255)   | email address of Person              |
-| phone         | VARCHAR(10)    | cell phone number of Person          |
 
 **Student**
 | Attribute     | Data type      | Description                          |
 | ------------- | -------------- | ------------------------------------ |
-| ID            | int            | ID number                            |
-| gradyear      | DATE           | expected graduation date of Student  |
-| major         | VARCHAR(255)   | major of Student                     |
-| type          | TINYTEXT       | type of Student (undergrad or grad)  |
+| student_id    | int            | ID number                            |
+| name          | VARCHAR(45)    | name of student                      |
+| phone         | VARCHAR(45)    | contact phone number                 |
+| email         | VARCHAR(45)    | email address                        |
+| academic_year | VARCHAR(45)    | class standing of student            |
+| major         | VARCHAR(45)    | major of Student                     |
+                                                                          
 
 **Faculty**
 | Attribute     | Data type      | Description                          |
 | ------------- | -------------- | ------------------------------------ |
-| ID            | int            | ID number                            |
-| title         | VARCHAR(50)    | job title of Faculty                 |
-| highestDegree | VARCHAR(255)   | highest obtained degree              |
-| degreecollege | TINYTEXT       | college degree was obtained from     |
+| faculty_id    | int            | ID number                            |
+| name          | VARCHAR(45)    | name of faculty member               |
+| phone         | VARCHAR(45)    | contact phone number                 |
+| email         | VARCHAR(45)    | email address                        |
 
 **Driver**
-| Attribute     | Data type      | Description                          |
-| ------------- | -------------- | ------------------------------------ |
-| ID            | int            | ID number                            |
-| licenseNumber | VARCHAR(20)    | state issued driver's license number |
-| dateHired     | DATE           | date hired by company                |
-| rating        | int            | average delivery rating              |
+| Attribute           | Data type      | Description                          |
+| ------------------- | -------------- | ------------------------------------ |
+| driver_id           | INT            | ID number                            |
+| licenseNumber       | VARCHAR(20)    | state issued driver's license number |
+| dateHired           | DATE           | date hired by company                |
+| student_student_id  | INT            | student ID of student                |
 
 
 **Order**
-| Attribute     | Data type      | Description                          |
-| ------------- | -------------- | ------------------------------------ |
-| ID            | int            | ID number                            |
-| items         | VARCHAR(255)   | items contained in order             |
-| restaraunt_id | int            | ID of restaurant order is from       |
-| location_id   | VARCHAR(255)   | ID of location to be delivered to    |
-| price         | numeric        | total price of order                 |
+| Attribute                      | Data type      | Description                             |
+| ------------------------------ | -------------- | --------------------------------------- |
+| order_id                       | INT            | order ID number                         |
+| completed                      | TINYINT        | completed status of order               |
+| student_student_id             | INT            | ID of student belonging to order        |
+| driver_driver_id               | INT            | ID of driver belonging to order         |
+| driver_student_student_id      | INT            | student ID of driver belonging to order |
+| faculty_faculty_id             | INT            | ID of faculty belonging to order        |
+| location_location_id           | INT            | ID of location belonging to order       |
+| restaurant_restaurant_id       | INT            | ID of restaurant belonging to order     |
+
 
 **Location**
 | Attribute     | Data type      | Description                          |
 | ------------- | -------------- | ------------------------------------ |
-| ID            | int            | ID number                            |
-| address       | VARCHAR(255)   | address of Location                  |
-| dropoffPoint  | VARCHAR(255)   | point of entry to Location           |
+| location_id   | INT            | ID number                            |
+| location_name | VARCHAR(45)    | name of location                     |
+| address       | VARCHAR(45)    | address of location                  |
 
 **Restaurant**
 | Attribute     | Data type      | Description                          |
 | ------------- | -------------- | ------------------------------------ |
-| ID            | int            | ID number                            |
-| name          | VARCHAR(255)   | name of Restaurant                   |
-| address       | VARCHAR(255)   | address of Restaurant                |
-| location      | VARCHAR(255)   | location of Restaurant               |
+| restaurant_id | INT            | ID number                            |
+| res_name      | VARCHAR(45)    | name of Restaurant                   |
+| address       | VARCHAR(45)    | address of Restaurant                |
+                                                                         
 
 ## MySQL Queries
 In our setup we will be using the usual create table queries. A simple example would be as follows:
