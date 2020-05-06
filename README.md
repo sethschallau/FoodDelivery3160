@@ -4,7 +4,7 @@ Members: Ethan Carter and Seth Schallau
 This Food Delivery service is providing a service to universities that works with security and safety procedures. 
 A university who purchases a license can run an instance of the application and distribute the app to their students. This will allow faculty to stay in control of who is delivering food on campus, and where that food is coming from. This application will work by allowing students to place an order at a resturant that is signed up with the service. This order will be "confirmed" and payment will be processed once a driver (another student) has accepted the order. These resturants, drivers, and students will all be "approved" users by the university faculty that oversees the operation.
 
-##Deliverable 4 Video: https://www.youtube.com/watch?v=i2xCgC1SwOo&feature=youtu.be
+## Deliverable 4 Video: https://www.youtube.com/watch?v=i2xCgC1SwOo&feature=youtu.be
 
 ## Use Case
 This application will be used by universities that do not want independent contractors on campus, but still desire food delivery service.
