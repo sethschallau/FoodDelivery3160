@@ -1,10 +1,10 @@
 # FoodDelivery3160
 Members: Ethan Carter and Seth Schallau
 ## Introduction
-This Food Delivery service is providing a service to universities that works with security and safety procedures. 
+This Food Delivery service is providing a service to universities that works with security and safety procedures.
 A university who purchases a license can run an instance of the application and distribute the app to their students. This will allow faculty to stay in control of who is delivering food on campus, and where that food is coming from. This application will work by allowing students to place an order at a resturant that is signed up with the service. This order will be "confirmed" and payment will be processed once a driver (another student) has accepted the order. These resturants, drivers, and students will all be "approved" users by the university faculty that oversees the operation.
 
-## Deliverable 4 Video: https://www.youtube.com/watch?v=i2xCgC1SwOo&feature=youtu.be
+## Deliverable 4 Video: https://youtu.be/5eEmQuUFB9g
 
 ## Use Case
 This application will be used by universities that do not want independent contractors on campus, but still desire food delivery service.
@@ -34,7 +34,7 @@ This application will be used by universities that do not want independent contr
 | email         | VARCHAR(45)    | email address                        |
 | academic_year | VARCHAR(45)    | class standing of student            |
 | major         | VARCHAR(45)    | major of Student                     |
-                                                                          
+
 
 **Faculty**
 | Attribute     | Data type      | Description                          |
@@ -79,7 +79,7 @@ This application will be used by universities that do not want independent contr
 | restaurant_id | INT            | ID number                            |
 | res_name      | VARCHAR(45)    | name of Restaurant                   |
 | address       | VARCHAR(45)    | address of Restaurant                |
-                                                                         
+
 
 ## MySQL Queries
 In our setup we will be using the usual create table queries. A simple example would be as follows:
@@ -88,7 +88,7 @@ In our setup we will be using the usual create table queries. A simple example w
 3. UPDATE deliveries WHERE ID == 1 SET completed = yes;
 
 ## Trigger
-When a new order is submitted to the database a delivery object will be created. When an order is marked completed the delivery should be updated to reflect a successful delivery. When a new establishment is submitted a faculty member of the app should be notified. 
+When a new order is submitted to the database a delivery object will be created. When an order is marked completed the delivery should be updated to reflect a successful delivery. When a new establishment is submitted a faculty member of the app should be notified.
 
 ## Stored Procedure
 
